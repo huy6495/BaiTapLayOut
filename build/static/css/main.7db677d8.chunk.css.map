@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/Components/Styles/style.module.css"],"names":[],"mappings":"AAAA,wBACI,WACJ,CAEA,uBACI,qBACJ","file":"main.7db677d8.chunk.css","sourcesContent":[".textGreen {\r\n    color: green;\r\n}\r\n\r\n.bg-black{\r\n    background-color: black;\r\n}"]}
