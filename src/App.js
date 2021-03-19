@@ -11,11 +11,18 @@ import HandleEvent from "./HandleEvent/HandleEvent";
 import StateDemo from "./StateDemo/StateDemo";
 import BaiTapChonXe from "./StateDemo/BaiTapChonXe";
 import BaiTapVongLap from "./Components/BaiTapVongLap/BaiTapVongLap";
+import RenderWithMap from "./RenderWithMap.js/RenderWithMap";
+import BaiTapLayoutMap from "./RenderWithMap.js/BaiTapLayoutMap";
+import DanhSachSPProps from "./Props/DemoProps/DanhSachSPProps";
+import BaiTapPropsFunction from "./Components/BaiTapTruyenPropsFunction/BaiTapPropsFunction";
+import Products from "./Props/BaiTapProps/Products";
+import BTGioHangRedux from "./Components/BaiTapRedux/BTGioHangRedux";
 
 function App() {
   return (
     <div className="App">
-      <BaiTapLayout />
+      {/* <BaiTapLayout1 /> */}
+      {/* <BaiTapLayout /> */}
       {/* <Databinding /> */}
       {/* <Styles />
       <p className="text-red">Cybersoft app component</p> */}
@@ -24,6 +31,12 @@ function App() {
       {/* <StateDemo /> */}
       {/* <BaiTapChonXe /> */}
       {/* <BaiTapVongLap /> */}
+      {/* <RenderWithMap /> */}
+      {/* <BaiTapLayoutMap /> */}
+      {/* <DanhSachSPProps /> */}
+      {/* <BaiTapPropsFunction /> */}
+      {/* <Products /> */}
+      <BTGioHangRedux />
     </div>
   );
 }
