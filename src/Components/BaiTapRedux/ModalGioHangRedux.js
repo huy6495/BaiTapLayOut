@@ -18,12 +18,36 @@ class ModalGioHangRedux extends Component {
             <img src={sp.hinhAnh} width={50} alt={sp.tenSP}></img>
           </td>
           <td>{sp.giaBan.toLocaleString()}</td>
-          <td>{sp.soLuong}</td>
+          <td>
+            <span className="container">
+              <button
+                className="btn btn-danger"
+                onClick={() => {
+                  this.props.tangGiamSL(index, -1);
+                }}
+              >
+                -
+              </button>
+            </span>
+            {sp.soLuong}
+            <span className="container">
+              <button
+                className="btn btn-success"
+                onClick={() => {
+                  this.props.tangGiamSL(index, 1);
+                }}
+              >
+                +
+              </button>
+            </span>
+          </td>
           <td>{thanhTien.toLocaleString()}</td>
           <td>
             <button
               className="btn btn-success"
-              onClick={this.props.xoaGioHangIndex(index)}
+              onClick={() => {
+                this.props.xoaGioHangIndex(index);
+              }}
             >
               Xóa
             </button>
@@ -45,7 +69,6 @@ class ModalGioHangRedux extends Component {
   render() {
     //this.props.gioHang la thuoc tinh nhan tu redux
 
-    console.log(this.props);
     return (
       <div className="container">
         <h1>Giỏ hàng(1)</h1>
@@ -78,12 +101,20 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     xoaGioHangIndex: (index) => {
+      // console.log(index);
       const action = {
         type: "XOA_GIO_HANG",
         index: index,
       };
-
       //Đưa action lên reducer
+      dispatch(action);
+    },
+    tangGiamSL: (index, sL) => {
+      const action = {
+        type: "TANG_GIAM_123",
+        index: index,
+        tangGiam: sL,
+      };
       dispatch(action);
     },
   };

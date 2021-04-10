@@ -34,6 +34,8 @@ const MapDispatchToProps = (dispatch) => {
   //Hàm trên là redux định nghĩa, khúc dưới này mình mới định nghĩa nè
   return {
     //Tạo ra props là function (function này sẽ đưa dữ liệu lên store)
+
+    //Nhung gi sinh ra trong day se sinh ra props cua component
     themGioHang: (sp) => {
       const spGioHang = {
         maSP: sp.maSP,

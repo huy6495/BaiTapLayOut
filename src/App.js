@@ -9,7 +9,7 @@ import BaiTapLayout from "./Components/BaiTapThucHanhLayout/BaiTapLayout";
 import Styles from "./Components/Styles/Styles";
 import HandleEvent from "./HandleEvent/HandleEvent";
 import StateDemo from "./StateDemo/StateDemo";
-import BaiTapChonXe from "./StateDemo/BaiTapChonXe";
+import BaiTapChonXe from "./StateDemo/UseStateBaiTapChonXe";
 import BaiTapVongLap from "./Components/BaiTapVongLap/BaiTapVongLap";
 import RenderWithMap from "./RenderWithMap.js/RenderWithMap";
 import BaiTapLayoutMap from "./RenderWithMap.js/BaiTapLayoutMap";
@@ -17,6 +17,15 @@ import DanhSachSPProps from "./Props/DemoProps/DanhSachSPProps";
 import BaiTapPropsFunction from "./Components/BaiTapTruyenPropsFunction/BaiTapPropsFunction";
 import Products from "./Props/BaiTapProps/Products";
 import BTGioHangRedux from "./Components/BaiTapRedux/BTGioHangRedux";
+import BTBurger from "./Components/BTBurger/BTBurger";
+import BTXucXac from "./Components/BTGameXucXac/BTXucXac";
+import BTDatVe from "./Components/BTDatVe/BTDatVe";
+import UserProfile from "./FormValidation/UserProfile/UserProfile";
+import DemoJSS from "./JSSComponent/DemoJSS/DemoJSS";
+import FormReact from "./Components/FormReact/FormReact";
+import DemoTheme from "./Components/Themes/DemoTheme";
+import ToDoList from "./JSSComponent/DemoJSS/ToDoList";
+import LifeCycle from "./LifeCycle2/LifeCycle";
 
 function App() {
   return (
@@ -25,18 +34,25 @@ function App() {
       {/* <BaiTapLayout /> */}
       {/* <Databinding /> */}
       {/* <Styles />
-      <p className="text-red">Cybersoft app component</p> */}
-
       {/* <HandleEvent /> */}
       {/* <StateDemo /> */}
-      {/* <BaiTapChonXe /> */}
+      <BaiTapChonXe />
       {/* <BaiTapVongLap /> */}
       {/* <RenderWithMap /> */}
       {/* <BaiTapLayoutMap /> */}
       {/* <DanhSachSPProps /> */}
       {/* <BaiTapPropsFunction /> */}
       {/* <Products /> */}
-      <BTGioHangRedux />
+      {/* <BTGioHangRedux /> */}
+      {/* <BTBurger /> */}
+      {/* <BTXucXac /> */}
+      {/* <BTDatVe /> */}
+      {/* <UserProfile /> */}
+      {/* <DemoJSS /> */}
+      {/* <FormReact /> */}
+      {/* <DemoTheme /> */}
+      {/* <ToDoList /> */}
+      {/* <LifeCycle /> */}
     </div>
   );
 }
